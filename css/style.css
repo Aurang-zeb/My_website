@@ -469,6 +469,114 @@
     content: "\2605";
     position: absolute; }
 
+.fh5co-resume {
+  margin-bottom: 122px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 80px 0; }
+  .fh5co-resume .universal-h2 {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    color: #2c3e50; }
+  @media (max-width: 1250px) {
+    .fh5co-resume {
+      margin-bottom: 60px;
+      padding: 60px 0; } }
+
+.resume-content {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.resume-section {
+  margin-bottom: 60px;
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .resume-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+  .resume-section h3 {
+    font-size: 32px;
+    color: #c18f59;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #c18f59;
+    padding-bottom: 15px;
+    position: relative; }
+    .resume-section h3::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: #c18f59; }
+
+.resume-item {
+  margin-bottom: 35px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 5px solid #c18f59;
+  transition: all 0.3s ease;
+  position: relative; }
+  .resume-item:hover {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateX(10px); }
+  .resume-item h4 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-weight: bold; }
+  .resume-item .resume-date {
+    font-style: italic;
+    color: #c18f59;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600; }
+  .resume-item p {
+    line-height: 1.7;
+    color: #555;
+    font-size: 17px; }
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center; }
+  .skills-list li {
+    background: linear-gradient(45deg, #c18f59, #d4a574);
+    color: white;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(193, 143, 89, 0.3); }
+    .skills-list li:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(193, 143, 89, 0.4); }
+
+@media (max-width: 768px) {
+  .resume-section {
+    padding: 20px;
+    margin-bottom: 40px; }
+    .resume-section h3 {
+      font-size: 24px; }
+  .resume-item {
+    padding: 15px;
+    margin-bottom: 20px; }
+    .resume-item h4 {
+      font-size: 20px; }
+  .skills-list {
+    justify-content: flex-start; }
+    .skills-list li {
+      padding: 8px 15px;
+      font-size: 14px; }
+}
+
 .fh5co-counter {
   position: relative;
   margin-bottom: 122px;
