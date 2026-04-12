@@ -392,70 +392,112 @@
   outline: none; }
 
 .fh5co-books {
-  margin-bottom: 122px; }
+  margin-bottom: 100px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 70px 0; }
   .fh5co-books .universal-h2 {
     margin-bottom: 50px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    color: #2c3e50; }
   .fh5co-books .books-brand-button {
-    text-align: center; }
+    text-align: center;
+    margin-top: 40px; }
     .fh5co-books .books-brand-button .brand-button {
-      font-size: 16px;
-      text-transform: none;
-      border-color: #c18f59; }
+      font-size: 18px;
+      padding: 15px 40px;
+      border-radius: 30px;
+      background: linear-gradient(45deg, #c18f59, #d4a574);
+      border: none;
+      color: white;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 15px rgba(193, 143, 89, 0.3); }
       .fh5co-books .books-brand-button .brand-button:hover {
-        border-color: #777; }
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(193, 143, 89, 0.4);
+        background: linear-gradient(45deg, #d4a574, #c18f59); }
   @media (max-width: 1250px) {
     .fh5co-books {
-      margin-bottom: 60px; } }
+      margin-bottom: 60px;
+      padding: 50px 0; } }
 
 .books {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 70px; }
-  @media (max-width: 559px) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+  justify-items: center; }
+  @media (max-width: 1024px) {
     .books {
-      justify-content: space-around; } }
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px; } }
+  @media (max-width: 768px) {
+    .books {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px; } }
+  @media (max-width: 480px) {
+    .books {
+      grid-template-columns: 1fr;
+      gap: 20px; } }
 
 .single-book {
-  margin-bottom: 20px;
-  text-align: center; }
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  max-width: 300px; }
+  .single-book::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #c18f59, #d4a574, #c18f59);
+    transform: scaleX(0);
+    transition: transform 0.4s ease; }
+  .single-book:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.18); }
+    .single-book:hover::before {
+      transform: scaleX(1); }
   .single-book .single-book__img {
     position: relative;
     display: block;
-    font-size: 0; }
-    .single-book .single-book__img .single-book_download {
-      opacity: 0;
-      visibility: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
+    height: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+    .single-book .single-book__img img {
       width: 100%;
       height: 100%;
-      background-color: #000;
-      transition: 0.3s ease; }
-      .single-book .single-book__img .single-book_download img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1; }
-    .single-book .single-book__img:hover .single-book_download {
-      visibility: visible;
-      opacity: 0.7; }
+      object-fit: cover;
+      transition: transform 0.5s ease; }
+    .single-book:hover .single-book__img img {
+      transform: scale(1.12); }
   .single-book .single-book__title {
-    margin: 19px 0 18px;
-    font-size: 18px; }
-  .single-book .single-book__price {
-    font-size: 18px;
-    font-weight: 600;
-    font-style: italic;
-    color: #c18f59; }
-  @media (max-width: 1250px) {
-    .single-book {
-      margin-right: 10px; }
-      .single-book:last-child {
-        margin-right: 0; } }
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0;
+    transition: color 0.3s ease; }
+    .single-book:hover .single-book__title {
+      color: #c18f59; }
+
+@media (max-width: 768px) {
+  .single-book {
+    padding: 25px;
+    max-width: 250px; }
+    .single-book .single-book__img {
+      height: 220px; }
+    .single-book .single-book__title {
+      font-size: 18px; }
+}
 
 .rating {
   margin-top: 8px;
@@ -577,6 +619,89 @@
       font-size: 14px; }
 }
 
+.fh5co-philosophy {
+  margin-bottom: 122px;
+  background: linear-gradient(135deg, #fef9e7 0%, #f5f7fa 100%);
+  padding: 80px 0; }
+  .fh5co-philosophy .universal-h2 {
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: #2c3e50; }
+  @media (max-width: 1250px) {
+    .fh5co-philosophy {
+      margin-bottom: 60px;
+      padding: 60px 0; } }
+
+.philosophy-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  transition: all 0.4s ease; }
+  .philosophy-card:hover {
+    box-shadow: 0 25px 60px rgba(0,0,0,0.18);
+    transform: translateY(-8px); }
+
+.philosophy-header {
+  background: linear-gradient(135deg, #c18f59 0%, #d4a574 100%);
+  color: white;
+  padding: 50px;
+  text-align: center;
+  border-bottom: 4px solid #a87a47; }
+  .philosophy-header h3 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-weight: bold; }
+  .philosophy-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.95; }
+  @media (max-width: 768px) {
+    .philosophy-header {
+      padding: 30px 20px; }
+      .philosophy-header h3 {
+        font-size: 28px; }
+      .philosophy-subtitle {
+        font-size: 16px; }
+  }
+
+.philosophy-body {
+  padding: 50px; }
+
+.philosophy-point {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #f0f0f0; }
+  .philosophy-point:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none; }
+  .philosophy-point h4 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: bold; }
+  .philosophy-point h4:hover {
+    color: #c18f59; }
+  .philosophy-point p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666; }
+
+@media (max-width: 768px) {
+  .philosophy-body {
+    padding: 30px 20px; }
+  .philosophy-point {
+    margin-bottom: 30px;
+    padding-bottom: 30px; }
+    .philosophy-point h4 {
+      font-size: 20px; }
+    .philosophy-point p {
+      font-size: 16px; }
+}
+
 .fh5co-counter {
   position: relative;
   margin-bottom: 122px;
@@ -633,9 +758,14 @@
 
 .single-count__text {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center;
+  gap: 12px; }
   .single-count__text img {
-    margin-right: 20px; }
+    margin: 0;
+    width: 36px;
+    height: 36px;
+    object-fit: contain; }
 
 .fh5co-blog {
   margin-bottom: 175px; }
