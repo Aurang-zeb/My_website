@@ -525,8 +525,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
-    opacity: 0.8; }
+    background-color: #080707;
+    opacity: 0.9; }
   .fh5co-resume .universal-h2 {
     margin-bottom: 50px;
     padding-bottom: 20px;
@@ -637,13 +637,15 @@
 }
 
 .fh5co-philosophy {
+   background-image: url("../images/about-me-bckg.jpg");
   margin-bottom: 122px;
-  background: linear-gradient(135deg, #fef9e7 0%, #f5f7fa 100%);
+  
+  /* background: linear-gradient(135deg, #1e1e1d 0%, #f5f7fa 100%); */
   padding: 80px 0; }
   .fh5co-philosophy .universal-h2 {
     margin-bottom: 60px;
     padding-bottom: 20px;
-    color: #2c3e50; }
+    color: white; }
   @media (max-width: 1250px) {
     .fh5co-philosophy {
       margin-bottom: 60px;
@@ -1244,6 +1246,8 @@
 .print-btn:hover {
     background:red;
     padding: 10px 50px;
+     transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(71, 156, 65, 0.4);
 }
 @media print {
     body * {
