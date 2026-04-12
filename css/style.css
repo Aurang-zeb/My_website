@@ -1229,3 +1229,39 @@
       .footer-bottom-inner p {
         font-size: 14px;
         margin-bottom: 20px; } }
+
+        
+.print-btn {
+    padding: 10px 18px;
+    background:green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 52px;
+    margin: 15px 0;
+}
+
+.print-btn:hover {
+    background:red;
+    padding: 10px 50px;
+}
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #resume, #resume * {
+        visibility: visible;
+    }
+
+    #resume {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .print-btn {
+        display: none;
+    }
+}
