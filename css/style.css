@@ -512,13 +512,30 @@
     position: absolute; }
 
 .fh5co-resume {
+  position: relative;
   margin-bottom: 122px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  padding: 80px 0; }
+  padding: 80px 0;
+  background-image: url("../images/book-bckg.jpg");
+  background-position: center;
+  background-size: cover; }
+  .fh5co-resume::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8; }
   .fh5co-resume .universal-h2 {
     margin-bottom: 50px;
     padding-bottom: 20px;
-    color: #2c3e50; }
+    color: #fff;
+    position: relative;
+    z-index: 1; }
+  .fh5co-resume .resume-content {
+    position: relative;
+    z-index: 1; }
   @media (max-width: 1250px) {
     .fh5co-resume {
       margin-bottom: 60px;
@@ -699,6 +716,121 @@
     .philosophy-point h4 {
       font-size: 20px; }
     .philosophy-point p {
+      font-size: 16px; }
+}
+
+.fh5co-teaching-practice {
+  position: relative;
+  margin-bottom: 122px;
+  padding: 80px 0;
+  background-image: url("../images/about-me-bckg.jpg");
+  background-position: center;
+  background-size: cover; }
+  .fh5co-teaching-practice::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(193, 143, 89, 0.85) 0%, rgba(212, 165, 116, 0.75) 100%);
+    z-index: 1; }
+  .fh5co-teaching-practice .universal-h2 {
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 2; }
+  .fh5co-teaching-practice .teaching-practice-card {
+    position: relative;
+    z-index: 2; }
+  @media (max-width: 1250px) {
+    .fh5co-teaching-practice {
+      margin-bottom: 60px;
+      padding: 60px 0; } }
+
+.teaching-practice-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  transition: all 0.4s ease; }
+  .teaching-practice-card:hover {
+    box-shadow: 0 25px 60px rgba(0,0,0,0.18);
+    transform: translateY(-8px); }
+
+.teaching-practice-header {
+  background: rgba(255, 255, 255, 0.95);
+  color: #2c3e50;
+  padding: 50px;
+  text-align: center;
+  border-bottom: 4px solid #c18f59;
+  backdrop-filter: blur(10px); }
+  .teaching-practice-header h3 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-weight: bold; }
+  .teaching-practice-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9; }
+  @media (max-width: 768px) {
+    .teaching-practice-header {
+      padding: 30px 20px; }
+      .teaching-practice-header h3 {
+        font-size: 28px; }
+      .teaching-practice-subtitle {
+        font-size: 16px; }
+  }
+
+.teaching-practice-body {
+  padding: 50px; }
+
+.teaching-practice-point {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #f0f0f0; }
+  .teaching-practice-point:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none; }
+  .teaching-practice-point h4 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: bold; }
+  .teaching-practice-point h4:hover {
+    color: #c18f59; }
+  .teaching-practice-point p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px; }
+  .teaching-practice-point ul {
+    margin-left: 20px;
+    margin-bottom: 15px; }
+  .teaching-practice-point li {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 8px; }
+  .teaching-practice-point strong {
+    color: #2c3e50;
+    font-weight: bold; }
+
+@media (max-width: 768px) {
+  .teaching-practice-body {
+    padding: 30px 20px; }
+  .teaching-practice-point {
+    margin-bottom: 30px;
+    padding-bottom: 30px; }
+    .teaching-practice-point h4 {
+      font-size: 20px; }
+    .teaching-practice-point p {
+      font-size: 16px; }
+    .teaching-practice-point li {
       font-size: 16px; }
 }
 
