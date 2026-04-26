@@ -3,15 +3,16 @@ $(document).ready(function() {
 	
 	/* Navigation burger onclick side navigation show */
 	$('.burger-container').on('click', function() {
-		$('.main-navigation').toggle('slow');
+	$(this).toggleClass('change'); // control icon here
+	$('.main-navigation').toggle('medium');
+	$('body').toggleClass('stop-scroll'); // simpler + reliable
+});
 
-		if($('#myBtn').hasClass('change')) {
-			$('body').addClass('stop-scroll');
-		} else {
-			$('body').removeClass('stop-scroll');
-		}
-	});
-
+$('.main-navigation a').on('click', function() {
+	$('.main-navigation').hide();
+	$('.burger-container').removeClass('change');
+	$('body').removeClass('stop-scroll');
+});
 
 	/* About me slider */
 	$('.about-me-slider').slick({
