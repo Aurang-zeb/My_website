@@ -2,17 +2,27 @@ $(document).ready(function() {
 
 	
 	/* Navigation burger onclick side navigation show */
-	$('.burger-container').on('click', function() {
-	$(this).toggleClass('change'); // control icon here
-	$('.main-navigation').toggle('medium');
-	$('body').toggleClass('stop-scroll'); // simpler + reliable
-});
+$('.burger-container').on('click', function(e) {
+		e.stopPropagation();
 
-$('.main-navigation a').on('click', function() {
-	$('.main-navigation').hide();
-	$('.burger-container').removeClass('change');
-	$('body').removeClass('stop-scroll');
-});
+		$(this).toggleClass('change');
+		$('.main-navigation').toggleClass('active');
+		$('body').toggleClass('stop-scroll');
+	});
+
+	$('.main-navigation a').on('click', function() {
+		closeMenu();
+	});
+
+	$(document).on('click', function() {
+		closeMenu();
+	});
+
+	function closeMenu() {
+		$('.main-navigation').removeClass('active');
+		$('.burger-container').removeClass('change');
+		$('body').removeClass('stop-scroll');
+	}
 
 	/* About me slider */
 	$('.about-me-slider').slick({
