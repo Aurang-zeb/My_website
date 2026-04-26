@@ -91,7 +91,8 @@
       text-transform: uppercase;
       transition: 0.3s ease; }
       .main-navigation .main-navigation__ul a:hover {
-        color: #777; }
+        color: whitesmoke;
+      background-color: black; }
   @media (max-width: 1150px) {
     .main-navigation {
       opacity: 0.94; } }
@@ -500,17 +501,7 @@
       font-size: 18px; }
 }
 
-.rating {
-  margin-top: 8px;
-  unicode-bidi: bidi-override;
-  direction: rtl; }
-  .rating span {
-    font-size: 23px;
-    color: #ffd200;
-    cursor: pointer; }
-  .rating > span:hover:before, .rating > span:hover ~ span:before {
-    content: "\2605";
-    position: absolute; }
+
 
 .fh5co-resume {
   position: relative;
@@ -618,6 +609,8 @@
     .skills-list li:hover {
       transform: scale(1.1);
       box-shadow: 0 6px 12px rgba(193, 143, 89, 0.4); }
+      .skills-list:hover li {
+        background: linear-gradient(45deg, #d4a574, #c18f59); }
 
 @media (max-width: 768px) {
   .resume-section {
@@ -663,9 +656,13 @@
   .philosophy-card:hover {
     box-shadow: 0 25px 60px rgba(0,0,0,0.18);
     transform: translateY(-8px); }
+    .philosophy-card:hover .philosophy-header {
+      background: linear-gradient(135deg, #d4a574 0%, #c18f59 100%); 
+      color:linear-gradient(135deg, #d4a574 0%, #c18f59 100%); 
+    }
 
 .philosophy-header {
-  background: linear-gradient(135deg, #c18f59 0%, #d4a574 100%);
+  background: linear-gradient(135deg, #6059c1 0%, #d4a574 100%);
   color: white;
   padding: 50px;
   text-align: center;
@@ -724,6 +721,7 @@
 
 .fh5co-teaching-practice {
   position: relative;
+  
   margin-bottom: 122px;
   padding: 80px 0;
   background-image: url("../images/about-me-bckg.jpg");
@@ -740,11 +738,13 @@
     z-index: 1; }
   .fh5co-teaching-practice .universal-h2 {
     margin-bottom: 60px;
+    
     padding-bottom: 20px;
     color: #fff;
     position: relative;
     z-index: 2; }
   .fh5co-teaching-practice .teaching-practice-card {
+    
     position: relative;
     z-index: 2; }
   @media (max-width: 1250px) {
@@ -1296,3 +1296,7 @@
 .main-navigation.active {
 	display: block;
 }
+
+/*  */
+
+
