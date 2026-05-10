@@ -92,7 +92,10 @@
       transition: 0.3s ease; }
       .main-navigation .main-navigation__ul a:hover {
         color: whitesmoke;
-      background-color: black; }
+      background-color: black;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(160, 20, 20, 0.15);
+   }
   @media (max-width: 1150px) {
     .main-navigation {
       opacity: 0.94; } }
@@ -1301,3 +1304,7 @@
 
 /* for slider code */
 
+.hstyle:hover{
+  color :#c18f59;
+  font-weight: bold;
+}
