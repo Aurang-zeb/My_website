@@ -1308,3 +1308,78 @@
   color :#c18f59;
   font-weight: bold;
 }
+
+
+
+/*  */
+
+/* Certifications Section */
+.certifications-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, white 0%, #c18f59 100%);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.section-subtitle {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.certification-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cert-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #6baff2 90%);
+  padding: 30px 25px;
+  width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+}
+
+.badge-image {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.cert-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.cert-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.verify-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #60c1ea 0%, #005fa3 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.verify-btn:hover {
+  background: #005fa3;
+}
