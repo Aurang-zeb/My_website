@@ -266,19 +266,19 @@ body {
 
 .brand-button {
   display: inline-block;
-  padding: 14px 28px;
+   padding: 4px 8px; 
   font-size: 13px;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--text-light);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(89, 215, 196, 0.916);
   border-radius: 999px;
   transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 .brand-button:hover, .brand-button:focus {
   color: var(--text-light);
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(158, 115, 211, 0.932);
   transform: translateY(-2px);
 }
 .brand-button--primary {
