@@ -45,6 +45,11 @@ $('.burger-container').on('click', function(e) {
 		}
 		]
 	});
+
+	/* Prevent carousel item links from jumping the page */
+	$('.fh5co-books .single-book__img').on('click', function(e) {
+		e.preventDefault();
+	});
 	
 });
 
